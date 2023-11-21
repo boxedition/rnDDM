@@ -14,10 +14,10 @@ const App: React.FunctionComponent<IAppProps> = (props) => {
             justifyContent: 'center',
 
         }}>
-            <Text style={{ 
+            <Text style={{
                 borderColor: 'blue',
-             borderWidth: 1 
-             }}>Welcome to React Native on DDM.</Text>
+                borderWidth: 1
+            }}>Welcome to React Native on DDM.</Text>
         </View>
     )
 };
