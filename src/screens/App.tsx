@@ -1,13 +1,23 @@
+import React, { useState, useEffect } from 'react';
 import { useNavigation } from '@react-navigation/native';
-import React from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
+import { Text, TouchableOpacity, View, TextInput } from 'react-native';
 import { SECONDARY } from '../navigation/name_screen';
 
 interface IAppProps {
 }
 
 const App: React.FunctionComponent<IAppProps> = (props) => {
-    const navigation = useNavigation();
+    const navigation = useNavigation<any>();
+
+    /**
+     * Criar Variavel Name
+     * names is expected to be a string
+     */
+    const [name, setName] = useState<string>("");
+
+    useEffect(() => {
+        console.log("[Info] name changed to:", name);
+    }, [name])
 
     return (
         <View style={{
@@ -23,9 +33,23 @@ const App: React.FunctionComponent<IAppProps> = (props) => {
                 borderWidth: 1
             }}>Welcome to React Native on DDM.</Text>
 
-            <TouchableOpacity onPress={() => navigation.navigate(SECONDARY as never)}>
+            <TouchableOpacity onPress={() => navigation.navigate(SECONDARY, { name: name })}>
                 <Text>Go to Secondary Screen</Text>
             </TouchableOpacity>
+
+            <View style={{ flex: 1, borderColor: 'yellow' }}>
+                <Text>Enter your name:</Text>
+                <TextInput
+                    style={{
+                        height: 40,
+                        margin: 12,
+                        borderWidth: 1,
+                        padding: 10,
+                    }}
+                    onChangeText={setName}
+                    value={name}
+                />
+            </View>
         </View>
     )
 };
