@@ -1,32 +1,31 @@
 import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
-import { SECONDARY } from '../navigation/name_screen';
 
-interface IAppProps {
+interface ISecondaryProps {
 }
 
-const App: React.FunctionComponent<IAppProps> = (props) => {
+const Secondary: React.FunctionComponent<ISecondaryProps> = (props) => {
     const navigation = useNavigation();
 
     return (
         <View style={{
             flex: 1,
             alignItems: 'center',
-            borderColor: 'red',
+            borderColor: 'orange',
             borderWidth: 1,
             justifyContent: 'center',
 
         }}>
             <Text style={{
-                borderColor: 'blue',
+                borderColor: 'green',
                 borderWidth: 1
-            }}>Welcome to React Native on DDM.</Text>
+            }}>Secondary Screen.</Text>
 
-            <TouchableOpacity onPress={() => navigation.navigate(SECONDARY as never)}>
-                <Text>Go to Secondary Screen</Text>
+            <TouchableOpacity onPress={() => navigation.goBack()}>
+                <Text>Go Back</Text>
             </TouchableOpacity>
         </View>
     )
 };
-export default App;
+export default Secondary;
