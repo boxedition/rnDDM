@@ -10,7 +10,7 @@ const ShowName: React.FC<IShowNameProps> = (props) => {
     return (
         <>
             <Text>{props.name}</Text>
-            {props.name === ("Jeff").toLowerCase() && <>
+            {props.name === "Jeff" && <>
                 <Image
                     style={{ width: 150, height: 150 }}
                     source={{
