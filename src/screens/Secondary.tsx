@@ -1,6 +1,7 @@
 import { useNavigation } from '@react-navigation/native';
 import React, { useEffect } from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
+import ShowName from '../component/ShowName';
 
 interface ISecondaryProps {
     route?: any,
@@ -27,14 +28,7 @@ const Secondary: React.FunctionComponent<ISecondaryProps> = (props) => {
                 borderColor: 'green',
                 borderWidth: 1
             }}>Secondary Screen.</Text>
-            {
-                /**
-                 * Conditional Render
-                 */
-                name !== "" && (
-                    <Text>{name}</Text>
-                )
-            }
+            <ShowName name={name} />
             <TouchableOpacity onPress={() => navigation.goBack()}>
                 <Text>Go Back</Text>
             </TouchableOpacity>
