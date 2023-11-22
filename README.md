@@ -1,4 +1,11 @@
-This is a new [**React Native**](https://reactnative.dev) project
+# Docs and Guides
+- [NVM Windows](https://dubble.so/guides/install-nvm-ybkr82tsnjurzel3hhtg) - A guide to install NVM on a Windows machine.
+- [Jabba](https://dubble.so/guides/guide-to-install-jabba-java-version-manager-yba4vhr4nq9mcklpq2ma) - A guide to install Jabba on a Windows machine.
+- [React Navigation](https://dubble.so/guides/guide-with-react-navigation-lxy3ketea3hxmzorzfhs) - A guide to install a package on React Native.
+- [React Navigation - Stack](https://dubble.so/guides/guide-with-react-navigation-stack-tqrsfmwgaseqjeijo0bo) - A guide to install a Stack to work with React Navigation.
+- [Chocolatey](https://dubble.so/guides/guide-with-react-navigation-stack-tqrsfmwgaseqjeijo0bo) - A guide to install a Chocolatey on Windows.
+- [Flipper](https://dubble.so/guides/guide-for-flipper-g1ib8kbydxiolpmft04d) - A guide to install a Chocolatey on Windows.
+
 
 # Getting Started
 
@@ -78,6 +85,8 @@ If you can't get this to work, see the [Troubleshooting](https://reactnative.dev
 
 To learn more about React Native, take a look at the following resources:
 
+- [Awesome React Native](https://github.com/enaqx/awesome-react#react-graphics-and-animations) - A bundle of React Native Libraries.
+- [https://expo.dev/](https://expo.dev/) - A React Native Plataform that simplifies Ecosystem.
 - [React Native Website](https://reactnative.dev) - learn more about React Native.
 - [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
